@@ -74,10 +74,14 @@
                 margin: 6px;
             }
             mid {
-                flex-direction: row;                
+                flex-direction: row;
+                display: inline-flex;                
             }
-            mid container {
-                display: flex;
+            mid > div {
+                position: relative;
+                flex-basis: 75vw;                
+            }
+            mid container {                
                 flex-direction: column;
             } 
             .m2 {  
