@@ -23,6 +23,7 @@
         }
         mid {
             flex-direction: column;
+            flex-wrap: nowrap;
         }
         mid div {
             display: flex;
@@ -62,8 +63,11 @@
         .fill {
             flex-grow: 1;
         }
-        .m4 {        
-                        
+        .m2 {  
+            display:none;                            
+        }
+        .m3 {
+            display:none;
         }
         @media only screen and (min-width: 768px) {
             body {
@@ -73,17 +77,30 @@
                 flex-direction: row;                
             }
             mid container {
-            display: flex;
-            flex-direction: column;           
-        }
+                display: flex;
+                flex-direction: column;
+            } 
+            .m2 {  
+                display:flex;                            
+            }
+            .m3 {
+            display:flex;
+            }        
+            .fill {
+            flex-grow: 1;
+            }
+        }  
+        
     </style>
 </head>
 <body>
     <header>
             <ul>
                     <li>menu1</li>
-                    <li class="fill"></li>
                     <li class="m2">menu2</li>
+                    <li class="m3">menu3</li>
+                    <li class="fill"></li>
+                    <li class="m4">menu4</li>
             </ul>        
     </header>
     <mid>
